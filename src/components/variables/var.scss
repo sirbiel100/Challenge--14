@@ -1,0 +1,35 @@
+//Colors
+
+    //Primary
+$LightRed_CTA_Text: hsl(356, 100%, 66%);
+$VeryLightRed_CTA_hover_background: hsl(355, 100%, 74%);
+$VeryDarkBlue_Headings: hsl(208, 49%, 24%);
+
+    //Neutral
+
+$White_text: hsl(0, 0%, 100%);
+$GrayishBlue_footer_text: hsl(240, 2%, 79%);
+$VeryDarkGrayishBlue_body_copy: hsl(207, 13%, 34%);
+$VeryDarkBlackBlue_footer_background: hsl(240, 10%, 16%);
+
+    //Gradient
+
+//Background gradient - Intro/CTA mobile nav:
+
+$VerylightRed_Mobile_Gradient_Nav: hsl(13, 100%, 72%);
+$LightRed_Mobile_Gradient_Nav: hsl(353, 100%, 62%);
+
+//Background gradient - body:
+
+$VeryDarkGrayBlue_body_gradient: hsl(237, 17%, 21%);
+$VeryDarkDesaturatedBlue_body_gradient: hsl(237, 23%, 32%);
+
+//Typography
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+
+$Overpass3-6: 'Overpass', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+$Ubuntu4-5-7: 'Ubuntu', sans-serif;
