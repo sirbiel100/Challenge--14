@@ -1,0 +1,48 @@
+@import '../variables/var.scss'; 
+
+.Designed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: wheat;
+    width: 100vw;
+
+    .header-designed {
+        background-color: green;
+    }
+
+    .main-designed{
+        display: flex;
+        align-items: center;
+        background-color: yellow;
+
+        .text-main-designed{
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+
+
+
+
+
+
+    .images-main-designed {
+        position: relative;
+        background-color: paleturquoise;
+        
+        img {
+            &:nth-child(1){
+                position: absolute;
+                background-color: red;
+                width: 100%;
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+}

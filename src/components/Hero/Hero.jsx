@@ -5,12 +5,11 @@ import Background from '/Users/lucas/challenge--14/src/images/bg-pattern-intro-d
 import MobileBackground from '/Users/lucas/challenge--14/src/images/bg-pattern-intro-mobile.svg';
 
 function Hero() {
-    
+    const connect = document.querySelector('#connect');
+    const arrow = document.querySelector('#arrow-span');
+    const infoBox = document.querySelector('#info');
+
     function info() {
-        const connect = document.querySelector('#connect');
-        const arrow = document.querySelector('#arrow-span');
-        const infoBox = document.querySelector('#info');
-        
         arrow.classList.toggle('span-toggle');
         infoBox.classList.toggle('connect-toggle');
 
@@ -22,6 +21,7 @@ function Hero() {
         const menuMobile = document.querySelector('#menu-mobile');
         menuMobile.classList.toggle('Header-toggle');
     }
+
 
 return (
     <div className='Hero'>
@@ -70,4 +70,5 @@ return (
     </div>
 );
 };
+
 export default Hero
