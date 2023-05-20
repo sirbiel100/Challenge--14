@@ -4,30 +4,54 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: wheat;
+  margin-top: 8em;
   width: 100vw;
 }
-.Designed .header-designed {
-  background-color: green;
+.Designed h2, .Designed h3 {
+  font-family: "Ubuntu", sans-serif;
+  color: hsl(208, 49%, 24%);
+  font-weight: 500;
+}
+.Designed .header-designed h2 {
+  font-size: clamp(1rem, 1rem + 3vw, 2.5rem);
 }
 .Designed .main-designed {
   display: flex;
   align-items: center;
-  background-color: yellow;
 }
 .Designed .main-designed .text-main-designed {
-  background-color: pink;
+  width: 50%;
   display: flex;
   flex-direction: column;
+  padding-left: 4em;
+  gap: 5em;
+}
+.Designed .main-designed .text-main-designed .first-text-main-designed, .Designed .main-designed .text-main-designed .second-text-main-designed {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  gap: 1em;
+}
+.Designed .main-designed .text-main-designed .first-text-main-designed h3, .Designed .main-designed .text-main-designed .second-text-main-designed h3 {
+  font-size: clamp(1rem, 1rem + 3vw, 1.5rem);
+}
+.Designed .main-designed .text-main-designed .first-text-main-designed p, .Designed .main-designed .text-main-designed .second-text-main-designed p {
+  color: hsl(207, 13%, 34%);
+  line-height: 1.5;
+  font-size: clamp(0.5rem, 1rem + 3vw, 1rem);
+  font-family: "Ubuntu", sans-serif;
 }
 .Designed .images-main-designed {
-  position: relative;
-  background-color: paleturquoise;
+  width: 50%;
 }
 .Designed .images-main-designed img:nth-child(1) {
-  position: absolute;
-  background-color: red;
+  height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 11.6em;
+     object-position: 11.6em;
 }
 .Designed .images-main-designed img:nth-child(2) {
   display: none;

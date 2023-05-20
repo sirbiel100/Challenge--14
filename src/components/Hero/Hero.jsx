@@ -22,7 +22,6 @@ function Hero() {
         menuMobile.classList.toggle('Header-toggle');
     }
 
-
 return (
     <div className='Hero'>
     
