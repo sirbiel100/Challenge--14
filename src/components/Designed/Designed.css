@@ -20,7 +20,8 @@
   align-items: center;
 }
 .Designed .main-designed .text-main-designed {
-  width: 50%;
+  max-width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding-left: 4em;
@@ -32,6 +33,7 @@
   align-items: flex-start;
   text-align: start;
   gap: 1em;
+  line-break: anywhere;
 }
 .Designed .main-designed .text-main-designed .first-text-main-designed h3, .Designed .main-designed .text-main-designed .second-text-main-designed h3 {
   font-size: clamp(1rem, 1rem + 3vw, 1.5rem);
@@ -55,4 +57,36 @@
 }
 .Designed .images-main-designed img:nth-child(2) {
   display: none;
+}
+
+@media (max-width: 700px) {
+  .Designed {
+    gap: 3em;
+    width: 90vw !important;
+  }
+  .main-designed {
+    gap: 2em;
+    flex-direction: column-reverse;
+  }
+  .text-main-designed {
+    max-width: 70% !important;
+    width: 100% !important;
+  }
+  .text-main-designed .first-text-main-designed, .text-main-designed .second-text-main-designed {
+    align-items: center !important;
+    text-align: center !important;
+    gap: 2em !important;
+  }
+  .images-main-designed {
+    width: 100% !important;
+  }
+  .images-main-designed img:nth-child(1) {
+    display: none;
+  }
+  .images-main-designed img:nth-child(2) {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: inline-block !important;
+  }
 }/*# sourceMappingURL=Designed.css.map */

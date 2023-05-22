@@ -5,6 +5,7 @@ import Background from '/Users/lucas/challenge--14/src/images/bg-pattern-intro-d
 import MobileBackground from '/Users/lucas/challenge--14/src/images/bg-pattern-intro-mobile.svg';
 
 function Hero() {
+    
     const connect = document.querySelector('#connect');
     const arrow = document.querySelector('#arrow-span');
     const infoBox = document.querySelector('#info');
