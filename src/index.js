@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Hero from './components/Hero/Hero';
 import Designed from './components/Designed/Designed';
+import Art from './components/Art/Art';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Hero />
     <Designed />
+    <Art />
   </React.StrictMode>
 );
 

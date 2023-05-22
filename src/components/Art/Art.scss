@@ -1,0 +1,61 @@
+@import '../variables/var.scss';
+
+.Art {
+    display: flex;
+    align-items: center;
+    margin-top: 8em;
+    max-width: 100vw;
+    height: 22em;
+    border-radius: 0 100px 0 100px;
+    background-image: linear-gradient(to top left, $VeryDarkDesaturatedBlue_body_gradient, $VeryDarkGrayBlue_body_gradient);
+    
+
+    .art-image-content {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left: 8em;
+        max-height: 100%;
+        max-width: 50%;
+        background-image: url(/src/images/bg-pattern-circles.svg);
+        background-position: bottom -8em right -3em;
+        background-repeat: no-repeat;
+        border-radius: 0 100px 0 0;
+        
+
+        
+
+        img {
+            &:nth-child(1){
+                max-width: 100%;
+                z-index: 1;
+                object-fit: cover;
+            }
+
+        }
+    }
+    
+    .art-text-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        padding-left: 5em ;
+        max-width: 50%;
+        width: calc(50vw - 15em);
+        color: white;
+        
+
+        h2 {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-family: $Overpass3-6;
+        }
+
+        p{
+            font-size: clamp(.8rem, 5vw, 1rem);
+            font-family: $Ubuntu4-5-7;
+            line-height: 1.4;
+
+        }
+    }
+}
