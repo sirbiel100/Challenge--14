@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: clamp(.5em, 5vw, 1em);
     margin-top: 8em;
     max-width: 100vw;
     overflow: hidden;
@@ -58,13 +59,14 @@
     }
 
     .images-main-designed {
-        max-width: 100%;
-        
+
+
         img {
             &:nth-child(1){
-                height: auto;
-                max-width: 100%;
-                object-position: 8.5em;
+                position: relative;
+                left: 9.5em;
+                width: 100%;
+                
             }
             &:nth-child(2) {
                 display: none;

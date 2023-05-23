@@ -48,6 +48,10 @@ table {
 
 //Style 
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 html, body {
 	width: 100vw;
     height: auto;

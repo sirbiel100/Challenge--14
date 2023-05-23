@@ -12,10 +12,9 @@
 .Art .art-image-content {
   display: flex;
   align-items: center;
-  position: relative;
   padding-left: 8em;
-  max-height: 100%;
-  max-width: 50%;
+  height: 100%;
+  width: clamp(50%, 100vw, 100%);
   background-image: url(/src/images/bg-pattern-circles.svg);
   background-position: bottom -8em right -3em;
   background-repeat: no-repeat;
@@ -30,19 +29,53 @@
 .Art .art-text-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 1em;
   padding-left: 5em;
   max-width: 50%;
-  width: calc(50vw - 15em);
+  width: clamp(50%, 100vw, 100%);
   color: white;
 }
 .Art .art-text-content h2 {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-size: clamp(2.3rem, 5vw, 2.5rem);
   font-family: "Overpass", sans-serif;
 }
 .Art .art-text-content p {
-  font-size: clamp(0.8rem, 5vw, 1rem);
+  font-size: clamp(0.7rem, 5vw, 1rem);
   font-family: "Ubuntu", sans-serif;
   line-height: 1.4;
+  color: hsl(240, 2%, 79%);
+}
+
+@media (max-width: 700px) {
+  .Art {
+    margin-top: 22em;
+    flex-direction: column;
+    height: 45em;
+  }
+  .Art .art-image-content {
+    padding-left: 0;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    background-position: bottom;
+  }
+  .Art .art-image-content img {
+    position: relative;
+    bottom: 15em;
+    width: 100%;
+  }
+  .Art .art-text-content {
+    position: relative;
+    bottom: 13em;
+    align-items: center;
+    padding: 0;
+    max-width: 100%;
+    width: 70%;
+    text-align: center;
+  }
+  .Art .art-text-content h2 {
+    line-height: 1.2;
+  }
 }/*# sourceMappingURL=Art.css.map */
