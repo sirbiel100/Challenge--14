@@ -1,0 +1,53 @@
+@import "../variables/var.scss";
+
+
+.Laptop {
+    display: flex;
+    align-items: center;
+    margin-top: 8em;
+    width: 100vw;
+
+
+    .laptop-image {
+        position: relative;
+        width: 100%;
+
+        img {
+            &:nth-child(1){
+                max-width: 100%;
+                object-fit: fill;
+                object-position: -6.3em;
+            }
+            
+            &:nth-child(2){
+            display: none;
+            }
+        }
+    }
+
+    .laptop-text-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+
+        .first-latop-text-content, .second-laptop-text-content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5em;
+            width: clamp(70%, 10% + 3vw, 20%);
+            font-family: $Ubuntu4-5-7;
+
+            h3 {
+                font-size: clamp(1.3rem, 1rem + 3vw, 2.3rem);
+                color: $VeryDarkBlue_Headings;
+            }
+
+            p{
+                line-height: 1.6;
+                color: $VeryDarkGrayishBlue_body_copy;
+            }
+        }
+    }
+}

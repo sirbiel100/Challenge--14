@@ -10,7 +10,7 @@ function Hero() {
     const arrow = document.querySelector('#arrow-span');
     const infoBox = document.querySelector('#info');
 
-    function info() {
+    async function info() {
         arrow.classList.toggle('span-toggle');
         infoBox.classList.toggle('connect-toggle');
     
@@ -18,7 +18,7 @@ function Hero() {
         
     }
     
-    function HeaderMobile() {
+    async function HeaderMobile() {
         const menuMobile = document.querySelector('#menu-mobile');
         menuMobile.classList.toggle('Header-toggle');
     }
