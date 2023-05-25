@@ -41,4 +41,25 @@
 .Laptop .laptop-text-content .first-latop-text-content p, .Laptop .laptop-text-content .second-laptop-text-content p {
   line-height: 1.6;
   color: hsl(207, 13%, 34%);
+}
+
+@media (max-width: 700px) {
+  .Laptop {
+    flex-direction: column;
+  }
+  .Laptop .laptop-image img:nth-child(1) {
+    display: none;
+  }
+  .Laptop .laptop-image img:nth-child(2) {
+    display: block;
+  }
+  .Laptop .laptop-text-content {
+    align-items: center;
+  }
+  .Laptop .laptop-text-content .first-latop-text-content,
+  .Laptop .laptop-text-content .second-laptop-text-content {
+    align-items: center;
+    text-align: center;
+    width: 70%;
+  }
 }/*# sourceMappingURL=Laptop.css.map */

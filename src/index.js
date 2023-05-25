@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero';
 import Designed from './components/Designed/Designed';
 import Art from './components/Art/Art';
 import Laptop from './components/Laptop/Laptop';
+import Footer from './components/Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
     <Designed />
     <Art />
     <Laptop />
+    <Footer />
   </React.StrictMode>
 );
 

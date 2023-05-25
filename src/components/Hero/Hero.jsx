@@ -10,17 +10,21 @@ function Hero() {
     const arrow = document.querySelector('#arrow-span');
     const infoBox = document.querySelector('#info');
 
-    async function info() {
+    function HeaderMobile() {
+        if (window.innerWidth <= 700){
+        const menuMobile = document.querySelector('#menu-mobile');
+        menuMobile.classList.toggle('Header-toggle');
+        } else {};
+    }
+
+    function info() {
         arrow.classList.toggle('span-toggle');
         infoBox.classList.toggle('connect-toggle');
     
-        if (window.innerWidth >= 700) {connect.classList.toggle('underline');} else {};
+        if (window.innerWidth > 700) {
+            connect.classList.toggle('underline');
+        } else {};
         
-    }
-    
-    async function HeaderMobile() {
-        const menuMobile = document.querySelector('#menu-mobile');
-        menuMobile.classList.toggle('Header-toggle');
     }
 
 return (

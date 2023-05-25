@@ -1,6 +1,5 @@
 @import "../variables/var.scss";
 
-
 .Laptop {
     display: flex;
     align-items: center;
@@ -47,6 +46,36 @@
             p{
                 line-height: 1.6;
                 color: $VeryDarkGrayishBlue_body_copy;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    
+    .Laptop {
+        flex-direction: column;
+
+        .laptop-image {
+            img {
+                &:nth-child(1){
+                    display: none;
+                }
+                
+                &:nth-child(2){
+                    display: block;
+                }
+            }
+        }
+
+        .laptop-text-content{
+            align-items: center;
+
+            .first-latop-text-content, 
+            .second-laptop-text-content{
+                align-items: center;
+                text-align: center;
+                width: 70%;
             }
         }
     }
