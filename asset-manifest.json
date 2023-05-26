@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/challenge--14/static/css/main.6b39530f.css",
+    "main.js": "/challenge--14/static/js/main.27848bf2.js",
+    "static/media/illustration-phones.svg": "/challenge--14/static/media/illustration-phones.fd23559f1d2f81f9e3f3340eeaf2467c.svg",
+    "static/media/logo.svg": "/challenge--14/static/media/logo.1591bc20b914c098a9cd6e423b1623c3.svg",
+    "static/media/illustration-laptop-mobile.svg": "/challenge--14/static/media/illustration-laptop-mobile.fe1ec0f05da01bb067fa78fca0b79d76.svg",
+    "static/media/illustration-laptop-desktop.svg": "/challenge--14/static/media/illustration-laptop-desktop.799209c2628b1f244e1512cc686f0162.svg",
+    "static/media/illustration-editor-desktop.svg": "/challenge--14/static/media/illustration-editor-desktop.c6c8050aa4dcf0c64b4406570c970d2b.svg",
+    "static/media/illustration-editor-mobile.svg": "/challenge--14/static/media/illustration-editor-mobile.b9c7941a96d06832fa27673be37499a4.svg",
+    "static/media/bg-pattern-intro-mobile.svg": "/challenge--14/static/media/bg-pattern-intro-mobile.3d70cc0d02948cb778517aece1eac215.svg",
+    "static/media/bg-pattern-intro-desktop.svg": "/challenge--14/static/media/bg-pattern-intro-desktop.bf6b3e1b727eabeffdc535d0d6a5f268.svg",
+    "index.html": "/challenge--14/index.html",
+    "static/media/bg-pattern-circles.svg": "/challenge--14/static/media/bg-pattern-circles.bae804b8cc1519f26c944365280d192b.svg",
+    "main.6b39530f.css.map": "/challenge--14/static/css/main.6b39530f.css.map",
+    "main.27848bf2.js.map": "/challenge--14/static/js/main.27848bf2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b39530f.css",
+    "static/js/main.27848bf2.js"
+  ]
+}
