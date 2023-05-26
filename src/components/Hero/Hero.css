@@ -11,6 +11,7 @@
   gap: 8em;
   border-radius: 0 0 0 15%;
   background-image: linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+  animation: HeroFade 2s 1 ease-in-out;
 }
 .Hero .nav {
   display: flex;
@@ -89,6 +90,7 @@
   gap: 4.5em;
   width: -moz-fit-content;
   width: fit-content;
+  animation: LeftMov 3s 1 ease-in-out;
 }
 .Hero .Header .left ul {
   display: flex;
@@ -150,6 +152,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 2em;
+  animation: RighttMov 3s 1 ease-in-out;
 }
 .Hero .Header .right a {
   color: hsl(0, 0%, 100%);
@@ -180,6 +183,7 @@
   align-items: center;
   gap: 2.7em;
   z-index: 1;
+  animation: MainZoom 3s 1 ease-in-out;
 }
 .Hero .main-content .text-content {
   display: flex;
@@ -253,6 +257,49 @@
   display: none;
 }
 
+@media (min-width: 701px) {
+  @keyframes HeroFade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes LeftMov {
+    0% {
+      transform: translateX(-50%);
+    }
+    50% {
+      transform: translateX(1%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes RighttMov {
+    0% {
+      transform: translateX(50%);
+    }
+    50% {
+      transform: translateX(-1%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes MainZoom {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
 @media (max-width: 700px) {
   .Hero {
     padding: 4em 0 8em 0;

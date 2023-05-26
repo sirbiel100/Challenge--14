@@ -10,14 +10,8 @@ function Hero() {
     const arrow = document.querySelector('#arrow-span');
     const infoBox = document.querySelector('#info');
 
-    function HeaderMobile() {
-        if (window.innerWidth <= 700){
-        const menuMobile = document.querySelector('#menu-mobile');
-        menuMobile.classList.toggle('Header-toggle');
-        } else {};
-    }
 
-    function info() {
+    async function info() {
         arrow.classList.toggle('span-toggle');
         infoBox.classList.toggle('connect-toggle');
     
@@ -26,6 +20,15 @@ function Hero() {
         } else {};
         
     }
+
+    async function HeaderMobile() {
+        if (window.innerWidth <= 700){
+        const menuMobile = document.querySelector('#menu-mobile');
+        menuMobile.classList.toggle('Header-toggle');
+        } else {};
+    }
+
+    
 
 return (
     <div className='Hero'>
