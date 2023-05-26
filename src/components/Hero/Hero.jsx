@@ -8,27 +8,7 @@ function Hero() {
     
     const connect = document.querySelector('#connect');
     const arrow = document.querySelector('#arrow-span');
-    const infoBox = document.querySelector('#info');
-
-
-    async function info() {
-        arrow.classList.toggle('span-toggle');
-        infoBox.classList.toggle('connect-toggle');
-    
-        if (window.innerWidth > 700) {
-            connect.classList.toggle('underline');
-        } else {};
-        
-    }
-
-    async function HeaderMobile() {
-        if (window.innerWidth <= 700){
-        const menuMobile = document.querySelector('#menu-mobile');
-        menuMobile.classList.toggle('Header-toggle');
-        } else {};
-    }
-
-    
+    const infoBox = document.querySelector('#info'); 
 
 return (
     <div className='Hero'>
@@ -77,6 +57,23 @@ return (
     </div>
 );
 
+
+async function info() {
+    arrow.classList.toggle('span-toggle');
+    infoBox.classList.toggle('connect-toggle');
+
+    if (window.innerWidth > 700) {
+        connect.classList.toggle('underline');
+    } else {};
+    
+}
+
+async function HeaderMobile() {
+    if (window.innerWidth <= 700){
+    const menuMobile = document.querySelector('#menu-mobile');
+    menuMobile.classList.toggle('Header-toggle');
+    } else {};
+}
 
 };
 
