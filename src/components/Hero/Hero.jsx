@@ -1,28 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Hero.css';
 import Logo from '/Users/lucas/challenge--14/src/images/logo.svg';
 import Background from '/Users/lucas/challenge--14/src/images/bg-pattern-intro-desktop.svg';
 import MobileBackground from '/Users/lucas/challenge--14/src/images/bg-pattern-intro-mobile.svg';
 
 function Hero() {
-    
-    const connect = document.querySelector('#connect');
-    const arrow = document.querySelector('#arrow-span');
-    const infoBox = document.querySelector('#info'); 
+    const [isInfoVisible, setIsInfoVisible] = useState(false);
+    const [isArrowVisible, setIsArrowVisible] = useState(false);
+    const [isConnectUnderlined, setIsConnectUnderlined] = useState(false);
+    const [isMenuMobileVisible, setIsMenuMobileVisible] = useState(false);
+
+    function toggleInfo() {
+    setIsArrowVisible(!isArrowVisible);
+    setIsInfoVisible(!isInfoVisible);
+
+    if (window.innerWidth > 700) {
+        setIsConnectUnderlined(!isConnectUnderlined);
+    }
+    }
+
+    function toggleHeaderMobile() {
+    if (window.innerWidth <= 700) {
+        setIsMenuMobileVisible(!isMenuMobileVisible);
+    }
+}
+
 
 return (
     <div className='Hero'>
     
         <div className="nav">
             <img src={Logo} alt="Logo" className='logo' />     
-            <div className='Header' id='menu-mobile'>
+            <div className={`Header ${isMenuMobileVisible ? 'Header-toggle' : ''}`} id='menu-mobile'>
                 <div className="left">
                     <ul>
                         <li>Product</li><span>{'>'}</span>
                         <li>Company</li><span>{'>'}</span>
-                        <li id='connect' className='connect' onClick={info}>Connect</li><span id='arrow-span' onClick={info}>{'>'}</span>
+                        <li id='connect' className={`connect ${isConnectUnderlined ? 'underline' : ''}`} onClick={toggleInfo}>Connect</li> <span id='arrow-span' className={`arrow-span ${isArrowVisible ? 'span-toggle' : ''}`} onClick={toggleInfo}>{'>'}</span>
                     </ul>
-                    <div className='connect-info' id='info'>
+                    <div className={`connect-info ${isInfoVisible ? 'connect-toggle' : ''}`} id='info'>
                         <p>Contact</p>
                         <p>Newsletter</p>
                         <p>LinkedIn</p>
@@ -34,7 +50,7 @@ return (
                 </div>
             </div>
         <input type="checkbox" id="checkbox" />
-        <label for="checkbox" className="toggle" onClick={HeaderMobile}>
+        <label for="checkbox" className="toggle" onClick={toggleHeaderMobile}>
             <div className="bars" id="bar1"></div>
             <div className="bars" id="bar2"></div>
             <div className="bars" id="bar3"></div>
@@ -57,23 +73,6 @@ return (
     </div>
 );
 
-
-async function info() {
-    arrow.classList.toggle('span-toggle');
-    infoBox.classList.toggle('connect-toggle');
-
-    if (window.innerWidth > 700) {
-        connect.classList.toggle('underline');
-    } else {};
-    
-}
-
-async function HeaderMobile() {
-    if (window.innerWidth <= 700){
-    const menuMobile = document.querySelector('#menu-mobile');
-    menuMobile.classList.toggle('Header-toggle');
-    } else {};
-}
 
 };
 
