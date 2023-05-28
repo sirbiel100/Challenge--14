@@ -194,7 +194,7 @@
   pointer-events: none;
 }
 .Hero .main-content .text-content h1 {
-  font-size: clamp(2rem, 3vw + 1rem, 4rem);
+  font-size: clamp(1.3rem, 3vw + 1rem, 4rem);
   color: white;
 }
 .Hero .main-content .text-content p {

@@ -55,6 +55,8 @@ table {
 html, body {
 	width: 100vw;
     height: auto;
+	overflow-x: hidden;
+	touch-action: pan-y pinch-zoom;
 }
 
 body {

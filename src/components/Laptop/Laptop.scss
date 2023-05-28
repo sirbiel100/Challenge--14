@@ -57,13 +57,19 @@
         flex-direction: column;
 
         .laptop-image {
+            position: static;
+            display: flex;
+            align-items: center;
+            
             img {
                 &:nth-child(1){
                     display: none;
                 }
                 
                 &:nth-child(2){
-                    display: block;
+                    background-color: red;
+                    display: inline-block;
+                    max-width: 100%;
                 }
             }
         }

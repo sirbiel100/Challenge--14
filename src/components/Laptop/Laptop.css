@@ -47,11 +47,18 @@
   .Laptop {
     flex-direction: column;
   }
+  .Laptop .laptop-image {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
   .Laptop .laptop-image img:nth-child(1) {
     display: none;
   }
   .Laptop .laptop-image img:nth-child(2) {
-    display: block;
+    background-color: red;
+    display: inline-block;
+    max-width: 100%;
   }
   .Laptop .laptop-text-content {
     align-items: center;
